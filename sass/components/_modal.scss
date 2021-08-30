@@ -315,6 +315,12 @@
   transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    border-color: $action-color;
+    transform: transition;
+  }
 }
 
 .field-checkbox__browser:checked + .field-checkbox__custom {
