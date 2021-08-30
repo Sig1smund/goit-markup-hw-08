@@ -1166,8 +1166,8 @@ body a:visited {
   fill: #afb1b8;
   -webkit-transition-property: fill, background-color;
   transition-property: fill, background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  -webkit-transition-duration: 2150ms;
+          transition-duration: 2150ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
