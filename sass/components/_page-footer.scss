@@ -1,0 +1,266 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.footer-logo .studio-lighten {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.addres-block {
+  display: inline;
+  width: auto;
+  padding: 0;
+  padding-right: 15px;
+  margin: 0;
+}
+
+.adress {
+  font-style: normal;
+  margin: 0;
+  padding-left: 0px;
+}
+
+// .contacts-link:hover,
+// .contacts-link:focus {
+//   color: $action-color;
+// }
+
+.adress__physical-adress {
+  font-family: inherit;
+  line-height: 1.5;
+  text-align: left;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  color: #ffffff;
+
+  padding-top: 20px;
+  padding-bottom: 9px;
+}
+
+.adress__item {
+  padding-bottom: 9px;
+}
+
+.address__link {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    color: $action-color;
+
+    transform: transition;
+  }
+}
+
+// .address__link:hover,
+// .address__link:focus {
+//   color: $action-color;
+
+//   transform: transition;
+// }
+
+.sign-block {
+  width: auto;
+
+  margin-left: 70px;
+  margin-right: 93px;
+
+  display: block;
+  justify-content: center;
+}
+
+.sign-block__title {
+  display: block;
+
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.sign-list {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.sign-list__item {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+// .sign-list__item:last-child {
+//   margin-right: 0px;
+// }
+
+.sign-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: $background-color;
+  padding: 0px;
+  margin: 0px;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $background-color;
+    background-color: $action-color;
+
+    transform: transition;
+  }
+}
+
+// .sign-list__link:hover,
+// .sign-list__link:focus {
+//   fill: $background-color;
+//   background-color: $action-color;
+
+//   transform: transition;
+// }
+
+.sign-container {
+  width: auto;
+
+  margin-left: 0px;
+  margin-right: auto;
+
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-title {
+  display: block;
+
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 15px;
+}
+
+.sign-form {
+  position: relative;
+  align-items: center;
+}
+
+.sign-form__input {
+  position: relative;
+  margin-right: 12px;
+  padding-left: 16px;
+
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(47, 48, 58, 1);
+  color: $background-color;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  transition: border 250ms $cubic;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $action-color;
+    outline: none;
+  }
+}
+
+.sign-form__button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin: 0;
+  padding-left: 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 28px;
+  background-color: $action-color;
+  color: $background-color;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: left;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  & .icon-send {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: $background-color;
+  }
+}

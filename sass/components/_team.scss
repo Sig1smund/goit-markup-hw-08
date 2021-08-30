@@ -1,0 +1,140 @@
+.section.darken {
+  background-color: #f5f4fa;
+}
+
+.section__title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.team-list__item {
+  text-align: center;
+  margin-right: 30px;
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
+
+  background-color: $background-color;
+
+  &:nth-child(4) {
+    margin-right: 0px;
+  }
+}
+
+// .team-list__item:nth-child(4) {
+//   margin-right: 0px;
+// }
+
+.worker {
+  padding-top: 30px;
+  padding-bottom: 16px;
+  padding-left: 60px;
+  padding-right: 59px;
+}
+
+.examples .works-examples,
+.team .team-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $primary-text-color;
+}
+
+.worker__name {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $primary-text-color;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.worker__position {
+  font-family: inherit;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  color: $secondary-text-color;
+  margin: 0px;
+}
+
+.social-block {
+  width: auto;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.social-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+// .social-list__item:last-child {
+//   margin-right: 0px;
+// }
+
+.social-container {
+  padding-left: 0px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-container__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  fill: rgba(175, 177, 184, 1);
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $background-color;
+    background-color: $action-color;
+
+    transform: transition;
+  }
+}
+
+// .social-container__link:hover,
+// .social-container__link:focus {
+//   fill: $background-color;
+//   background-color: $action-color;
+
+//   transform: transition;
+// }
