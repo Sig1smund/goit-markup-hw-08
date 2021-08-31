@@ -298,6 +298,15 @@ body a:visited {
 
 @media screen and (max-width: 767px) {
   .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
 }
@@ -333,8 +342,9 @@ body a:visited {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .navigation {
+    display: none;
     position: absolute;
     left: 0;
     top: 100%;
@@ -342,8 +352,19 @@ body a:visited {
     height: 100vh;
     overflow: hidden;
     background-color: #ffffff;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    padding-left: 40px;
+    padding-right: 83px;
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+  .navigation.is-open {
+    display: block;
+  }
+  .navigation.is-open .menu-close {
+    display: block;
+  }
+  .navigation.is-open .menu-open {
+    display: none;
   }
 }
 
@@ -380,18 +401,6 @@ body a:visited {
   .menu-button {
     display: none;
   }
-}
-
-.menu-button .menu-close {
-  display: none;
-}
-
-.menu-button.is-open .menu-close {
-  display: block;
-}
-
-.menu-button.is-open .menu-open {
-  display: none;
 }
 
 .navbar__logo {
@@ -443,9 +452,10 @@ body a:visited {
           transform: transition;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav-list {
     margin: 0;
+    padding: 0;
     margin-right: 40px;
   }
 }
@@ -466,7 +476,7 @@ body a:visited {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav-list__item {
     margin: 0;
   }
@@ -537,7 +547,7 @@ body a:visited {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav-list__link {
     font-family: inherit;
     font-size: 40px;
@@ -585,10 +595,10 @@ body a:visited {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .contacts-bar {
     display: block;
-    padding-left: 0px;
+    padding: 0;
   }
 }
 
@@ -620,7 +630,6 @@ body a:visited {
 @media screen and (min-width: 480px) {
   .contacts-bar__item {
     margin-top: auto;
-    margin-left: 40px;
   }
 }
 
