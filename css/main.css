@@ -290,54 +290,41 @@ body a:visited {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    position: static;
+  }
+}
+
 .header .container {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 767px) {
   .header .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header .container {
-    position: static;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 1200px;
   }
 }
@@ -357,8 +344,8 @@ body a:visited {
 
 @media screen and (min-width: 768px) {
   .header__logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -617,6 +604,10 @@ body a:visited {
   }
 }
 
+.nav-list__link.current {
+  color: #2196f3;
+}
+
 @media screen and (min-width: 480px) {
   .nav-list__link.current {
     font-family: inherit;
@@ -762,6 +753,7 @@ body a:visited {
     letter-spacing: 0.02em;
     text-align: left;
     font-size: 14px;
+    padding: 0;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -850,20 +842,22 @@ body a:visited {
   text-align: left;
 }
 
-.hero {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bkgimg.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bkgimg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-width: 1600px;
-  height: 600px;
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2f303a;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bkgimg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bkgimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 .hero__title {
