@@ -1,19 +1,46 @@
 .section.darken {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
   margin-top: 0px;
-  margin-bottom: 50px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-left: 0px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: unset;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: center;
+  }
 }
 
 .team-list__item {
