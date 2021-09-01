@@ -57,8 +57,14 @@ body {
 
 .header__logo {
   display: inline-flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .web {
@@ -104,6 +110,14 @@ body {
     display: block;
   }
 
+  &.is-open ~ .menu-button .menu-open {
+    display: none;
+  }
+
+  &.is-open ~ .menu-button .menu-close {
+    display: block;
+  }
+
   @media screen and (min-width: 768px) {
     position: static;
     display: flex;
@@ -119,6 +133,10 @@ body {
 
 .menu-button {
   @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 22px;
+    right: 23px;
+
     display: inline-flex;
     align-items: center;
     padding: 0;
@@ -129,6 +147,10 @@ body {
     &:hover,
     &:focus {
       fill: $action-color;
+    }
+
+    & .menu-close {
+      display: none;
     }
   }
   @media screen and (min-width: 768px) {

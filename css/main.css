@@ -346,8 +346,20 @@ body a:visited {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .header__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .web {
@@ -391,6 +403,14 @@ body a:visited {
   display: block;
 }
 
+.navigation.is-open ~ .menu-button .menu-open {
+  display: none;
+}
+
+.navigation.is-open ~ .menu-button .menu-close {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     position: static;
@@ -407,6 +427,9 @@ body a:visited {
 
 @media screen and (max-width: 767px) {
   .menu-button {
+    position: absolute;
+    top: 22px;
+    right: 23px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -420,6 +443,9 @@ body a:visited {
   }
   .menu-button:hover, .menu-button:focus {
     fill: #2196f3;
+  }
+  .menu-button .menu-close {
+    display: none;
   }
 }
 
