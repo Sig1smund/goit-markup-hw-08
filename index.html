@@ -16,14 +16,14 @@
   <body>
     <header class="header">
       <div class="container">
-          <a href="/" class="navbar__logo">
-            <span class="web">Web</span><span class="studio">Studio</span>
-          </a>
-          <button type="button" class="menu-button js-open-menu">
-            <svg width="24" height="18" class="menu-button__icon">
-              <use class="menu-open" href="./images/sprite.svg#menu-open"></use>
-              <use class="menu-close" ref="./images/sprite.svg#menu-close"></use>
-            </svg>
+        <a href="/" class="header__logo">
+          <span class="web">Web</span><span class="studio">Studio</span>
+        </a>
+        <button type="button" class="menu-button js-open-menu">
+          <svg width="24" height="18" class="menu-button__icon">
+            <use id='close' class="menu-open" href="./images/sprite.svg#menu-open"></use>
+            <use class="menu-close js-close-menu" href="./images/sprite.svg#menu-close"></use>
+          </svg>
           </button>
         <div class="navigation js-menu-container">
           <nav class="navbar">
@@ -56,6 +56,20 @@
                 +38 096 111 11 11</a
               >
             </li>
+          </ul>
+          <ul class="additional-list">
+                <li class="additional-list__item">
+                  <a href="#" class="additional-list__link">Instagram</a>
+                </li>
+                <li class="additional-list__item">
+                  <a href="#" class="additional-list__link">Twitter</a>
+                </li>
+                <li class="additional-list__item">
+                  <a href="#" class="additional-list__link">Facebook</a>
+                </li>
+                <li class="additional-list__item">
+                  <a href="#" class="additional-list__link">LinkedIn</a>
+                </li>
           </ul>
         </div>
           
