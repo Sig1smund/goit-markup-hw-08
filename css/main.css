@@ -476,6 +476,12 @@ body a:visited {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .navbar {
+    margin-left: 0;
+  }
+}
+
 .nav-list {
   color: #212121;
   margin: 0;
