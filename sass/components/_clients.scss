@@ -16,10 +16,6 @@
   }
 }
 
-// .clients-list__item:last-child {
-//   margin-right: 0px;
-// }
-
 .clients-list__logo {
   display: flex;
   justify-content: center;
@@ -46,12 +42,3 @@
     transform: transition;
   }
 }
-
-// .clients-list__logo:hover,
-// .clients-list__logo:focus {
-//   fill: $action-color;
-//   border-color: $action-color;
-//   background-color: $background-color;
-
-//   transform: transition;
-// }
