@@ -2173,18 +2173,18 @@ body a:visited {
   color: #ffffff;
 }
 
-.addres-block {
+.address-block {
   display: inline;
 }
 
 @media screen and (max-width: 767px) {
-  .addres-block {
+  .address-block {
     text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .addres-block {
+  .address-block {
     text-align: center;
     margin-right: 155px;
     margin-bottom: 60px;
@@ -2192,7 +2192,7 @@ body a:visited {
 }
 
 @media screen and (min-width: 1200px) {
-  .addres-block {
+  .address-block {
     text-align: left;
     display: inline;
     width: auto;

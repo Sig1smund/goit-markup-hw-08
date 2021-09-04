@@ -34,7 +34,7 @@
   color: #ffffff;
 }
 
-.addres-block {
+.address-block {
   display: inline;
   @media screen and (max-width: 767px) {
     text-align: center;
@@ -111,13 +111,6 @@
     transform: transition;
   }
 }
-
-// .address__link:hover,
-// .address__link:focus {
-//   color: $action-color;
-
-//   transform: transition;
-// }
 
 .sign-block {
   width: auto;
