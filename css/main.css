@@ -1539,6 +1539,7 @@ body a:visited {
 
 @media screen and (min-width: 1200px) {
   .section.shortened {
+    display: block;
     padding-top: 0;
     padding-bottom: 94px;
   }
@@ -1621,6 +1622,33 @@ body a:visited {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .section__container--team {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section__container--team {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__container--team {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1200px;
+  }
+}
+
 .section__title {
   margin-top: 0px;
 }
@@ -1661,6 +1689,9 @@ body a:visited {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1957,6 +1988,40 @@ body a:visited {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.section__container--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .section__container--footer {
+    width: 480px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__container--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
 }
 
 .footer-logo .studio-lighten {

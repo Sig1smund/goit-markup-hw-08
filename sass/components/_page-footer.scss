@@ -4,19 +4,22 @@
   padding-bottom: 60px;
 }
 
-// .footer__container {
-//   @media screen and (max-width:767px) {
-
-//   }
-//   @media screen and (min-width: 1200px) {
-//     display: flex;
-//     align-items: baseline;
-//     width: 1200px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-//     margin: 0 auto;
-//   }
-// }
+.section__container--footer {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    width: 480px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+}
 
 .footer-logo .studio-lighten {
   font-family: Raleway;
