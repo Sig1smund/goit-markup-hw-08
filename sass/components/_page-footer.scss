@@ -11,8 +11,12 @@
     flex-direction: column;
     justify-content: center;
   }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    flex-wrap: wrap;
+    flex-direction: unset;
+  }
   @media screen and (min-width: 1200px) {
-    display: flex;
     align-items: baseline;
     width: 1200px;
     padding-left: 15px;
@@ -32,22 +36,35 @@
 
 .addres-block {
   display: inline;
-  width: auto;
-  padding: 0;
-  padding-right: 15px;
-  margin: 0;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    margin-right: 155px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    display: inline;
+    width: auto;
+    padding: 0;
+    padding-right: 15px;
+    margin: 0;
+  }
 }
 
 .adress {
   font-style: normal;
   margin: 0;
   padding-left: 0px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
-
-// .contacts-link:hover,
-// .contacts-link:focus {
-//   color: $action-color;
-// }
 
 .adress__physical-adress {
   font-family: inherit;
@@ -59,6 +76,15 @@
 
   padding-top: 20px;
   padding-bottom: 9px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .adress__item {
@@ -96,11 +122,23 @@
 .sign-block {
   width: auto;
 
-  margin-left: 70px;
-  margin-right: 93px;
-
-  display: block;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    margin: 0;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 60px;
+    margin-left: 72px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 
 .sign-block__title {
@@ -119,12 +157,25 @@
   margin: 0px;
   padding: 0px;
   margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .sign-list {
   display: flex;
-  padding: 0px;
-  margin: 0px;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    margin-bottom: 60px;
+    padding-left: 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
 .sign-list__item {
@@ -140,10 +191,6 @@
     margin-right: 0px;
   }
 }
-
-// .sign-list__item:last-child {
-//   margin-right: 0px;
-// }
 
 .sign-list__link {
   display: flex;
@@ -171,14 +218,6 @@
   }
 }
 
-// .sign-list__link:hover,
-// .sign-list__link:focus {
-//   fill: $background-color;
-//   background-color: $action-color;
-
-//   transform: transition;
-// }
-
 .sign-container {
   width: auto;
 
@@ -188,6 +227,9 @@
   display: block;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+  }
 }
 
 .sign-title {
@@ -205,20 +247,38 @@
   margin: 0px;
   padding: 0px;
   margin-bottom: 15px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .sign-form {
+  display: inline-block;
   position: relative;
   align-items: center;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: unset;
+  }
 }
 
 .sign-form__input {
   position: relative;
-  margin-right: 12px;
+
+  height: 50px;
   padding-left: 16px;
 
-  width: 358px;
-  height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(47, 48, 58, 1);
@@ -234,6 +294,20 @@
   &:focus {
     border: 1px solid $action-color;
     outline: none;
+  }
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 12px;
+
+    width: 358px;
   }
 }
 
@@ -270,5 +344,16 @@
     top: 50%;
     transform: translate(-50%, -50%);
     fill: $background-color;
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
   }
 }

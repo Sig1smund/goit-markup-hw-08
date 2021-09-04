@@ -32,11 +32,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 1000;
   overflow: hidden;
-
-  max-width: 528px;
-  min-height: 581px;
 
   background-color: rgba(255, 255, 255, 1);
 
@@ -47,6 +43,18 @@
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__button {
@@ -85,16 +93,6 @@
   }
 }
 
-// .modal__button:hover,
-// .modal__button:focus {
-//   background-color: rgba(255, 255, 255, 1);
-//   color: $action-color;
-// }
-
-// .icon-close {
-//   fill: currentColor;
-// }
-
 .modal-form__container {
   display: flex;
   flex-direction: column;
@@ -130,7 +128,7 @@
   letter-spacing: 0.01em;
   text-align: left;
 
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 
   &:nth-child(5) {
     margin-bottom: 0;
@@ -143,11 +141,11 @@
 
 .form-field__input {
   position: relative;
-  width: 448px;
-  height: 40px;
 
   padding-left: 42px;
   margin-top: 4px;
+
+  height: 40px;
 
   border-radius: 4px;
 
@@ -170,6 +168,15 @@
   &:focus {
     border: 1px solid $action-color;
     outline: none;
+  }
+  @media screen and (max-width: 767px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
   }
 }
 
@@ -215,7 +222,6 @@
   padding-top: 12px;
   padding-left: 12px;
 
-  width: 448px;
   height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -251,23 +257,16 @@
     border-color: $action-color;
     outline: none;
   }
+  @media screen and (max-width: 767px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
-
-// .form-field__text-input::placeholder {
-//   color: rgba(117, 117, 117, 0.5);
-
-//   font-family: inherit;
-//   font-size: 12px;
-//   font-weight: 400;
-//   line-height: 1.1;
-//   letter-spacing: 0.01em;
-//   text-align: left;
-// }
-
-// .form-field__text-input:hover,
-// .form-field__text-input:focus {
-//   border-color: $action-color;
-// }
 
 .field-checkbox {
   position: relative;
@@ -300,7 +299,6 @@
 
 .field-checkbox__custom {
   position: absolute;
-  left: 10px;
   top: 3px;
 
   border: 2px solid $primary-text-color;
@@ -321,6 +319,16 @@
     border-color: $action-color;
     transform: transition;
   }
+  @media screen and (max-width: 767px) {
+    left: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    left: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    left: 10px;
+  }
 }
 
 .field-checkbox__browser:checked + .field-checkbox__custom {
@@ -340,8 +348,26 @@
   display: inline-block;
   margin: 0;
   padding: 0;
-  margin-left: 36px;
+
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: left;
   color: $secondary-text-color;
+  @media screen and (max-width: 767px) {
+    margin-left: 27px;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 27px;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 36px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .field-checkbox__policy-agreement {
