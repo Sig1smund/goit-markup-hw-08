@@ -30,7 +30,7 @@ body {
     position: static;
   }
 
-  .header__container {
+  & .header__container {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -131,6 +131,7 @@ body {
 }
 
 .menu-button {
+  cursor: pointer;
   @media screen and (max-width: 767px) {
     position: absolute;
     top: 22px;
