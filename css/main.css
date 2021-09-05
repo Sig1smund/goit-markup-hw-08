@@ -2041,12 +2041,20 @@ body a:visited {
 
 @media screen and (max-width: 767px) {
   .clients-list {
+    width: 450px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    width: 738px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients-list {
+    width: auto;
     margin: 0 auto;
   }
 }
@@ -2072,6 +2080,12 @@ body a:visited {
         -ms-flex-pack: center;
             justify-content: center;
     margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .clients-list__item:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .clients-list__item:nth-last-child(-n + 2) {
     margin-bottom: 30px;
   }
   .clients-list__item:nth-last-child(-n + 3) {
@@ -2650,7 +2664,7 @@ body a:visited {
 
 @media screen and (max-width: 767px) {
   .filter {
-    width: 480px;
+    width: 450px;
     padding-bottom: 40px;
   }
 }
@@ -2755,7 +2769,7 @@ body a:visited {
 
 @media screen and (max-width: 767px) {
   .projects {
-    width: 480px;
+    width: 450px;
   }
 }
 
@@ -2785,11 +2799,12 @@ body a:visited {
       flex-wrap: wrap;
   padding-left: 0px;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 767px) {
   .projects-list {
-    width: 480px;
+    width: 450px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
