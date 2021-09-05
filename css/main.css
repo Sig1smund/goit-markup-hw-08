@@ -2828,7 +2828,7 @@ body a:visited {
     -webkit-box-direction: unset;
         -ms-flex-direction: unset;
             flex-direction: unset;
-    width: 1200px;
+    width: 1170px;
     margin: 0 auto;
   }
 }
@@ -2866,6 +2866,7 @@ body a:visited {
 
 @media screen and (min-width: 1200px) {
   .projects-list__item {
+    width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
   }
