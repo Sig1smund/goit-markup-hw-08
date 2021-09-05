@@ -2628,9 +2628,9 @@ body a:visited {
   }
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 768px) {
   .gallery__container {
-    width: 728px;
+    width: 768px;
   }
 }
 
@@ -2645,6 +2645,7 @@ body a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -2660,7 +2661,7 @@ body a:visited {
         -ms-flex-pack: center;
             justify-content: center;
     padding-bottom: 30px;
-    width: auto;
+    width: 768px;
   }
 }
 
@@ -2671,7 +2672,6 @@ body a:visited {
             justify-content: center;
     padding-bottom: 50px;
     width: 1200px;
-    margin: 0 auto;
   }
 }
 
@@ -2750,6 +2750,7 @@ body a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -2773,7 +2774,6 @@ body a:visited {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 1200px;
-    margin: 0 auto;
   }
 }
 
