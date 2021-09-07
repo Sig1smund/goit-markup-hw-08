@@ -8,7 +8,6 @@
   margin-bottom: 0px;
   @media screen and (max-width: 767px) {
     min-width: 290px;
-    max-width: 450px;
     margin: 0 auto;
   }
   @media screen and (min-width: 768px) {
@@ -22,9 +21,7 @@
 
 .clients-list__item {
   @media screen and (max-width: 767px) {
-    min-width: 145px;
-    width: 210px;
-
+    flex-basis: calc((100% - 2 * 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
     &:nth-child(2n) {

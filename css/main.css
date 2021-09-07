@@ -2047,7 +2047,6 @@ body a:visited {
 @media screen and (max-width: 767px) {
   .clients-list {
     min-width: 290px;
-    max-width: 450px;
     margin: 0 auto;
   }
 }
@@ -2067,8 +2066,8 @@ body a:visited {
 
 @media screen and (max-width: 767px) {
   .clients-list__item {
-    min-width: 145px;
-    width: 210px;
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
