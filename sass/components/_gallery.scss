@@ -4,7 +4,9 @@
   margin: 0 auto;
 
   @media screen and (max-width: 767px) {
-    width: 480px;
+    min-width: 290px;
+    width: auto;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) {
@@ -23,7 +25,9 @@
   margin: 0 auto;
 
   @media screen and (max-width: 767px) {
-    width: 450px;
+    min-width: 290px;
+    width: auto;
+    max-width: 450px;
     padding-bottom: 40px;
   }
   @media screen and (min-width: 768px) {
@@ -107,7 +111,9 @@
   display: flex;
   margin: 0 auto;
   @media screen and (max-width: 767px) {
-    width: 450px;
+    min-width: 290px;
+    width: auto;
+    max-width: 450px;
   }
   @media screen and (min-width: 768px) {
     justify-content: space-between;
@@ -126,7 +132,9 @@
   margin-top: 0px;
   margin-bottom: 0px;
   @media screen and (max-width: 767px) {
-    width: 450px;
+    min-width: 290px;
+    width: auto;
+    max-width: 450px;
     flex-direction: column;
   }
   @media screen and (min-width: 768px) {
@@ -148,7 +156,9 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
-    width: 450px;
+    min-width: 290px;
+    width: auto;
+    max-width: 450px;
     &:last-child {
       margin-bottom: 0px;
     }

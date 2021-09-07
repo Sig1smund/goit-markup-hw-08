@@ -12,7 +12,7 @@
 .section__container--team {
   @media screen and (max-width: 767px) {
     justify-content: center;
-    width: 480px;
+    width: auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -80,7 +80,8 @@
   }
 
   @media screen and (max-width: 767px) {
-    width: 450px;
+    min-width: 290px;
+    max-width: 450px;
     margin: 0;
     margin-bottom: 30px;
 

@@ -7,7 +7,8 @@
   margin-top: 0px;
   margin-bottom: 0px;
   @media screen and (max-width: 767px) {
-    width: 450px;
+    min-width: 290px;
+    max-width: 450px;
     margin: 0 auto;
   }
   @media screen and (min-width: 768px) {
@@ -21,6 +22,7 @@
 
 .clients-list__item {
   @media screen and (max-width: 767px) {
+    min-width: 145px;
     width: 210px;
 
     margin-right: 30px;
