@@ -59,9 +59,9 @@
   }
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
-    &:nth-child(-n + 2) {
-      margin-bottom: 0px;
-    }
+    // &:nth-child(-n + 2) {
+    //   margin-bottom: 0px;
+    // }
   }
 }
 

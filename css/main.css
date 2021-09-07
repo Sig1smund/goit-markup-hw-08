@@ -2729,9 +2729,6 @@ body a:visited {
   .filter__button {
     margin-bottom: 15px;
   }
-  .filter__button:nth-child(-n + 2) {
-    margin-bottom: 0px;
-  }
 }
 
 .filter__radiobutton {
