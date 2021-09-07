@@ -881,6 +881,10 @@ body a:visited {
   text-align: left;
 }
 
+.additional-list__link:visited {
+  color: #2196f3;
+}
+
 @media screen and (max-width: 767px) {
   .hero {
     height: 400px;
@@ -1054,6 +1058,7 @@ body a:visited {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 100;
   overflow: hidden;
   background-color: white;
   -webkit-transform: scale(1) translate(-50%, -50%);
